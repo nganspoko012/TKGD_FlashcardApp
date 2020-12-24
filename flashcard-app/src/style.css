@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+.main-nav {
+    overflow: hidden;
+    background-color: #0078D4;
+    position: sticky;
+    top: 0;
+}
+
+.main-nav a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+  }
+
+  .main-nav span {
+      height: 24px;
+      font-size: 20px;
+      text-align: center;
+  }
+
+
+  .main-nav a:hover {
+      background-color: #003157;
+  }
+
+.side-nav {
+    position: fixed;
+    float: left;
+    overflow: hidden;
+    background-color: #ffffff;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    max-width: 240px;
+    border-right: 1px solid #333333;
+}
+
+.side-nav a{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.side-nav span {
+    height: 24px;
+}
+
+.side-nav-item i {
+    vertical-align: middle;
+}
+
+.side-nav-item-icon {
+    display: inline;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.side-nav-item-content {
+    display: inline;
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.side-nav a:hover {
+    background-color: #0078D4;
+    color: #ffffff;
+}
+
+.side-nav a::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-container {
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+    height: 100%;
+    margin: auto;
+}
+
+.main-container::after {
+    clear: both;
+}
+
+@media (max-width:600px){
+    .side-nav {
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .main-container {
+        float: none;
+        margin: auto;
+    }
+}
