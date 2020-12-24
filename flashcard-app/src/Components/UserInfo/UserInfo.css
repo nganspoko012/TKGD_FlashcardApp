@@ -1,0 +1,50 @@
+
+.flexbox-container-horizontal {
+    display: flex;
+    width: 100%;
+}
+
+.flexbox-avatar {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.flexbox-icon {
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.flexbox-icon button{
+    all: unset;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexbox-icon button:hover {
+    background-color: #0078D4;
+    color: #ffffff;
+}
+
+.user-name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.user-info {
+    border-bottom: 0.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}

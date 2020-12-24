@@ -1,0 +1,23 @@
+
+.avatar {
+    background-color: #9E54FC;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    min-height: 48px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
