@@ -1,6 +1,6 @@
 import '../style.css'
 
-export default function SideNav(props) {
+export default function SideNavItem(props) {
     return (
         <a href="#">
             <div className="side-nav-item">

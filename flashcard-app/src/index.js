@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainNav from './Components/MainNav'
-import BodyContent from './Components/BodyContent'
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainNav />
-    <BodyContent />
-    
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

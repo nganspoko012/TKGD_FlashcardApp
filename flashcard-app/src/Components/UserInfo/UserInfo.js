@@ -3,6 +3,9 @@ import './UserInfo.css'
 
 
 export default function UserInfo(props) {
+    function editUserBtnClick(e){
+        console.log("User btn clicked!");
+    }
     return (
         <div className="user-info">
             <div className="flexbox-container-horizontal">
@@ -11,7 +14,7 @@ export default function UserInfo(props) {
                     <Avatar letter={props.user.displayName.charAt(0)} color="#9E54FC"/>
                 </div>
                 <div className="flexbox-icon">
-                    <button id="editUserBtn" title="Thay đổi thông tin user">
+                    <button id="editUserBtn" title="Thay đổi thông tin user" onClick={editUserBtnClick}>
                     <i className="material-icons md-24">edit</i>
                     </button>
                 </div>
