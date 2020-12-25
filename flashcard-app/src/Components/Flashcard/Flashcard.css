@@ -1,0 +1,56 @@
+@import '../../style.css';
+
+.flashcard {
+    width: 1000px;
+    height: 550px;
+    cursor: pointer;
+}
+
+.flashcard-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;  
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 117, 184, 0.452);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flashcard-back {
+    background-color: #97303085;
+    transform: rotateX(180deg);
+}
+
+.flashcard:hover .flashcard-wrapper {
+    transform: rotateX(180deg);
+}
+
+.flashcard-button-group {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.flashcard-button {
+    all: unset;
+    background-color: #ffffffff;
+}
+
+.flashcard-button:hover {
+    color: #0078D4;
+}

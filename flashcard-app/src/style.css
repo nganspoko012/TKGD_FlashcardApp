@@ -24,10 +24,8 @@ body {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
     display: grid;
-    overflow-x: hidden;
+    overflow: hidden;
     grid-template-columns: 240px auto;
     grid-template-rows: 48px auto;
     column-gap: 20px;
@@ -131,7 +129,7 @@ body {
 .content-container {
     grid-column: 2;
     grid-row: 2;
-    overflow: hidden;
+    overflow-x: auto;
     width: 90%;
     height: 100%;
     box-sizing: border-box;
