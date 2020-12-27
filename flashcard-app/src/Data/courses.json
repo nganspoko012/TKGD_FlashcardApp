@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Animal",
+        "isPublic": false,
+        "dueCards": 100,
+        "totalCards": 200,
+        "userId": 1
+    },
+    {
+        "name": "English Grammer",
+        "isPublic": false,
+        "dueCards": 50,
+        "totalCards": 100,
+        "userId": 1
+    },
+    {
+        "id": 2,
+        "name": "600 Essential Words For TOEIC",
+        "isPublic": true,
+        "dueCards": 20,
+        "totalCards": 200,
+        "userId": 2
+    },
+    {
+        "id": 3,
+        "name": "1945 Kanji",
+        "isPublic": true,
+        "dueCards": 15,
+        "totalCards": 30,
+        "userId": 3
+    }
+]
