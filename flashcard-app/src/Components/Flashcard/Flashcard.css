@@ -19,7 +19,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(35, 117, 184, 0.452);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -27,14 +26,14 @@
     align-items: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flashcard-back {
-    background-color: #97303085;
     transform: rotateX(180deg);
 }
 
-.flashcard:hover .flashcard-wrapper {
+.flip {
     transform: rotateX(180deg);
 }
 
