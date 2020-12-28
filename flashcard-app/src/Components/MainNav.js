@@ -1,6 +1,6 @@
 import '../style.css'
 import React from 'react'
-import { BrowserRouter as Route, Switch, Redirect, BrowserRouter, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function MainNav({ menuHandler }) {
     return (
