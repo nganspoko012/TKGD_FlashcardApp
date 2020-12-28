@@ -156,9 +156,6 @@ nav ul li{
     width: 90%;
     height: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
 }
 
