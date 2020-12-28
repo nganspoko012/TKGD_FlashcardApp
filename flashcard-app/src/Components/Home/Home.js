@@ -3,8 +3,9 @@ import CommunityCourseCard from './CommunityCourseCard';
 import './Home.css';
 import users from '../../Data/users.json';
 import courses from '../../Data/courses.json';
+import displayStyle from '../../Utils/displayStyle'
 
-export default function Home() {
+export default function Home( {display} ) {
     const maxNCoursesUsers = 4;
     let coursesUsers = courses.map((course) => {
         let user = users.find(user => user.id == course.userId);
@@ -12,7 +13,7 @@ export default function Home() {
     });
 
     return (
-        <div className="content-container">
+        <div className="content-container" style={ display===false?displayStyle:{}}>
             <div className="home-container">
                 <div className="banner-container">
                     <div className="img-container">
