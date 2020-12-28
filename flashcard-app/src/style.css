@@ -160,6 +160,10 @@ nav ul li{
     margin: auto;
 }
 
+.unactive {
+    display: none;
+}
+
 
 .user-info {
     height: 130px;
