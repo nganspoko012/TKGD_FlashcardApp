@@ -14,7 +14,7 @@ export default function MainContent({ display }) {
             <Route path="/community">
                 <Community display={display}/>
             </Route>
-            <Route path="/coursePage">
+            <Route path="/courses">
                 <CoursePage/>
             </Route>
             <Route path="/">

@@ -14,10 +14,6 @@ export default function MainNav({ menuHandler }) {
                     <li><Link to="/help"><span>Trợ giúp</span></Link></li>
                 </ul>
             </nav>
-<<<<<<< HEAD
-    </div>
-=======
         </div>
->>>>>>> 3a5630fc82a0e4c150659aa0e9e640b703bc8c3f
     )
 }
