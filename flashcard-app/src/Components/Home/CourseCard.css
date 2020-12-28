@@ -19,6 +19,10 @@
     border-radius: 5px;
 }
 
+.course-card:active {
+    background-color: #4d3c3c13;
+}
+
 .course-card:hover .course-card-user{
     margin-bottom: 0px;
     

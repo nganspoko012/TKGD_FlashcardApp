@@ -2,14 +2,14 @@
     {
         "id": 1,
         "name": "Animal",
-        "isPublic": false,
+        "isPublic": true,
         "dueCards": 100,
         "totalCards": 200,
         "userId": 1
     },
     {
         "name": "English Grammer",
-        "isPublic": false,
+        "isPublic": true,
         "dueCards": 50,
         "totalCards": 100,
         "userId": 1
