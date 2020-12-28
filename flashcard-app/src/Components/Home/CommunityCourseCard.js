@@ -1,6 +1,4 @@
 import './CourseCard.css'
-
-import './CourseCard.css';
 import Avatar from '../UserInfo/Avatar';
 
 export default function CourseCard(props) {
