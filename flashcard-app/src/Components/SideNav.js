@@ -10,7 +10,7 @@ const userInfo = {
 
 export default function SideNav({ display }) {
     return (
-        <nav className={display == true ? "side-nav" : "unactive"}>
+        <nav className={display === true ? "side-nav" : "unactive"}>
             <UserInfo user={userInfo} />
             <Link to='/courses'><SideNavItem iconName='layers' content='Học phần' /></Link>
             <Link to='/templates'><SideNavItem iconName='receipt' content='Template' /></Link>

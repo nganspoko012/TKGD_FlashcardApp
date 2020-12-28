@@ -8,7 +8,7 @@ import displayStyle from '../../Utils/displayStyle'
 export default function Home( {display} ) {
     const maxNCoursesUsers = 4;
     let coursesUsers = courses.map((course) => {
-        let user = users.find(user => user.id == course.userId);
+        let user = users.find(user => user.id === course.userId);
         return { ...course, user: user };
     });
 

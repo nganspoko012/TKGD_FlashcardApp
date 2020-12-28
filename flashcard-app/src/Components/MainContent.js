@@ -3,12 +3,13 @@ import Home from './Home/Home.js';
 import Community from './Community/Community.js';
 
 import { Switch, Route } from "react-router-dom";
+import Courses from './Course/Courses';
 
 export default function MainContent({ display }) {
     return (
         <Switch>
-            <Route path="/course">
-                <Home display={display}/>
+            <Route path="/courses">
+                <Courses display={display}/>
             </Route>
             <Route path="/community">
                 <Community display={display}/>

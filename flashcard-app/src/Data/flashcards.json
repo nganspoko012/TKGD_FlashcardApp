@@ -4,48 +4,102 @@
         "courseId": 1,
         "frontFields": [
             {
-                "content": "cat"
-            },
-            {
-
+                "content": "demonstrate"
             }
         ],
         "backFields": [
             {
-                "content": "cat"
+                "content": "(v)"
             },
             {
-
+                "content": "to show clearly and deliberately;"
+            },
+            {
+                "content": "to present by example;"
             }
         ],
         "createdDate": "2020-12-20T00:00:00.969Z",
         "dueDay": "2020-12-20T00:00:00.969Z",
         "lastedLearnDate": "2020-12-20T00:00:00.969Z"
-        },
-    {
-        "name": "English Grammar",
-        "isPublic": true,
-        "dueCards": 50,
-        "totalCards": 100,
-        "userId": 1,
-        "rating": 4
     },
     {
         "id": 2,
-        "name": "600 Essential Words For TOEIC",
-        "isPublic": true,
-        "dueCards": 20,
-        "totalCards": 200,
-        "userId": 2,
-        "rating": 5
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "substitution"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n)"
+            },
+            {
+                "content": "replacement"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
     },
     {
         "id": 3,
-        "name": "1945 Kanji",
-        "isPublic": true,
-        "dueCards": 15,
-        "totalCards": 30,
-        "userId": 3,
-        "rating": 3.5
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "accomodate"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(v)"
+            },
+            {
+                "content": "to fit; toprovide with something needed"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 4,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "initiative"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n)"
+            },
+            {
+                "content": "the firse step; an active role"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 5,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "glimpse"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n, a)"
+            },
+            {
+                "content": "quick look"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
     }
 ]

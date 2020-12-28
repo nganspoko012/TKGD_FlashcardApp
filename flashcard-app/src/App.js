@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 export default function App() {
 
-    let [sideNavDisplay, setSideNavDisplay] = useState(true);
+    const [sideNavDisplay, setSideNavDisplay] = useState(true);
 
     function toggleSiveNav(e){
         e.preventDefault();
