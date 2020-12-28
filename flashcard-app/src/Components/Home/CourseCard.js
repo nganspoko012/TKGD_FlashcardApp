@@ -1,4 +1,4 @@
-import './CourseCard.css'
+import './CourseCard.css';
 import Avatar from '../UserInfo/Avatar';
 
 export default function CourseCard(props) {
@@ -10,11 +10,11 @@ export default function CourseCard(props) {
                 <i className="material-icons md-24">more_vert</i>
             </div>
             <div className="course-card-user">
-                <Avatar letter="N" color="#9E54FC" size="36px" />
-                <span>Ngân Võ</span>
+                <Avatar letter={props.course.user.displayName.charAt(0)} color={props.course.user.avatarColor} size="32px" />
+                <span>{props.course.user.displayName}</span>
                 <div className="due-info">
-                    <span className="due">{props.course.dueCards}</span>
-                    <span>/{props.course.totalCards}</span>
+                    <span className="small-text">Tới hạn: </span>
+                    <span className="due small-text" title="Tới hạn">{props.course.dueCards}</span>
                 </div>
             </div>
         </div>

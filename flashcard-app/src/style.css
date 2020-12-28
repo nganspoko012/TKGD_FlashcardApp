@@ -143,8 +143,14 @@ body {
     width: 100%;
 }
 
+.small-text {
+    font-size: 14px;
+    font-weight: 60;
+    color: #000000d7;
+}
+
 .due {
-    color: #F44336;
+    color: #f44336d7;
 }
 
 @media (max-width:900px){

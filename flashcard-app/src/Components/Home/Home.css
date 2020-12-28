@@ -1,34 +1,67 @@
 @import '../../style.css';
 
-.home-containter {
-    display: grid;
+.home-container {
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    width: 100%; */
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
 }
 
+.more-info {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.more-info-link {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #0078D4;
+}
+
+.more-info > .more-info-link {
+  margin-left: auto;
+}
+
+
 .banner-container {
-    grid-column: 1;
-    grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 30px;
-    background-color: wheat;
     width: 100%;
     box-sizing: border-box;
 }
 
+.courses-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
 .course-container {
-    grid-column: 1;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    background-color: wheat;
     width: 100%;    
     padding: 10px;
     box-sizing: border-box;
-    gap: 12px;
+    gap: 10px;
 }
 
 
