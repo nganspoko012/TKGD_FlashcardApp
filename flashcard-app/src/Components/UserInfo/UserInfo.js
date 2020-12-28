@@ -13,7 +13,7 @@ export default function UserInfo(props) {
                 <div className="flexbox-avatar">
                     <Avatar letter={props.user.displayName.charAt(0)} color="#9E54FC"/>
                 </div>
-                <div className="flexbox-icon">
+                <div className="flexbox-icon button">
                     <button id="editUserBtn" title="Thay đổi thông tin user" onClick={editUserBtnClick}>
                     <i className="material-icons md-24">edit</i>
                     </button>

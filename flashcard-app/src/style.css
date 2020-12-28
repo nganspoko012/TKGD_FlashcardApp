@@ -41,7 +41,6 @@ nav ul{
 
 nav ul li{
 	display: inline-block;
-	margin-right: 20px;
 }
 
 .main-nav {
@@ -163,6 +162,23 @@ nav ul li{
 
 .due {
     color: #f44336d7;
+}
+
+.star {
+    color: #FFEB3B;
+    vertical-align: middle;
+}
+
+.button {
+    cursor: pointer;;
+}
+
+.button:hover {
+    color: #0078D4;
+}
+
+.button:active {
+    color: #362d2d91;
 }
 
 @media (max-width:900px){

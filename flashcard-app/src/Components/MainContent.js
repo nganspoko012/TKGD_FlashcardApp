@@ -1,5 +1,6 @@
 import '../style.css';
 import Home from './Home/Home.js';
+import Community from './Community/Community.js';
 
 import { Switch, Route } from "react-router-dom";
 
@@ -10,7 +11,7 @@ export default function MainContent() {
                 <Home />
             </Route>
             <Route path="/community">
-                <Home />
+                <Community />
             </Route>
             <Route path="/">
                 <Home />

@@ -1,9 +1,11 @@
 import CourseCard from './CourseCard';
+import CommunityCourseCard from './CommunityCourseCard';
 import './Home.css';
 import users from '../../Data/users.json';
 import courses from '../../Data/courses.json';
 
 export default function Home() {
+    const maxNCoursesUsers = 4;
     let coursesUsers = courses.map((course) => {
         let user = users.find(user => user.id == course.userId);
         return { ...course, user: user };
@@ -34,7 +36,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className="course-container">
-                        {coursesUsers.map((course, i) =>
+                        {coursesUsers.slice(0, maxNCoursesUsers).map((course, i) =>
                             <CourseCard key={i} course={course} />)}
                     </div>
                 </div>
@@ -47,8 +49,8 @@ export default function Home() {
                         </a>
                     </div>
                     <div className="course-container">
-                        {coursesUsers.map((course, i) =>
-                            <CourseCard key={i} course={course} />)}
+                        {coursesUsers.slice(0, maxNCoursesUsers).map((course, i) =>
+                            <CommunityCourseCard key={i} course={course} />)}
                     </div>
                 </div>
 
