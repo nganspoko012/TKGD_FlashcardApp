@@ -1,6 +1,6 @@
 import '../style.css';
 import Home from './Home/Home.js';
-import Community from './Community.js'
+import Community from './Community/Community.js';
 
 import { Switch, Route } from "react-router-dom";
 
