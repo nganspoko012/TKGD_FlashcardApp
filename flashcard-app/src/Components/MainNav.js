@@ -1,4 +1,6 @@
-import '../style.css'
+import '../style.css';
+import { Link } from 'react-router-dom'
+
 
 export default function MainNav(){
     function menuClick(e) {
@@ -8,8 +10,8 @@ export default function MainNav(){
     return (
     <nav className="main-nav">
         <a href="#" id="menu" onClick={menuClick}><i className="material-icons md-24">menu</i></a>
-        <a href="#"><i className="material-icons md-24">home</i></a>
-        <a href="#"><span>Cộng đồng</span></a>
+        <Link to="/home"><i className="material-icons md-24">home</i></Link>
+        <Link to="/community"><span>Cộng đồng</span></Link>
         <a href="#"><span>Giới thiệu</span></a>
         <a href="#"><span>Trợ giúp</span></a>
     </nav>
