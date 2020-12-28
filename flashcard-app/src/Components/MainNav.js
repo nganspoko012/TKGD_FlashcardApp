@@ -2,16 +2,13 @@ import '../style.css'
 import React from 'react'
 import {BrowserRouter as Route,Switch,Redirect,BrowserRouter,Link } from 'react-router-dom'
 
-import Community from './Community'
-
 export default function MainNav(){
     function menuClick(e) {
         e.preventDefault();
         console.log("Menu clicked!")
     }
     return (
-    <div class="nav-bar">
-        <BrowserRouter>
+    <div className="nav-bar">
             <nav className="main-nav">
                 <ul>
                     <li><a href="#" id="menu" onClick={menuClick}><i className="material-icons md-24">menu</i></a></li>
@@ -21,13 +18,6 @@ export default function MainNav(){
                     <li><Link to="/help"><span>Trợ giúp</span></Link></li>
                 </ul>
             </nav>
-            <main>
-                <Switch>
-                    <Route path="/community" component={Community} />
-                </Switch>
-                <Redirect to="/"/>
-            </main>
-        </BrowserRouter>
     </div>
     )
 }

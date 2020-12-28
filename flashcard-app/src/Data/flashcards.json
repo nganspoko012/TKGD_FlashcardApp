@@ -1,13 +1,27 @@
 [
     {
         "id": 1,
-        "name": "Animal",
-        "isPublic": true,
-        "dueCards": 100,
-        "totalCards": 200,
-        "userId": 1,
-        "rating": 4.5
-    },
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "cat"
+            },
+            {
+
+            }
+        ],
+        "backFields": [
+            {
+                "content": "cat"
+            },
+            {
+
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-20T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+        },
     {
         "name": "English Grammar",
         "isPublic": true,

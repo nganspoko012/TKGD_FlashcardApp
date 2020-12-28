@@ -22,5 +22,13 @@
         "displayName": "Thành Long",
         "email": "thanhlong@gmail.com",
         "avatarColor": "#107C10"
+    },
+    {
+        "id": 4,
+        "username": "user4",
+        "password": "user4",
+        "displayName": "Yến Vy",
+        "email": "yenvy@gmail.com",
+        "avatarColor": "#F4511E"
     }
 ]
