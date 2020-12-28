@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from '../Common/SearchBar'
+import CourseTable from './CourseTable'
 
 export default function CoursePage(){
     return (
@@ -10,7 +11,7 @@ export default function CoursePage(){
                     <button className="btn-search">Tìm kiếm</button>
                 </div>
                 <div className="community-course-card">
-                    
+                    <CourseTable/>
                 </div>
             </form>
 

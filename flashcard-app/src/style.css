@@ -42,6 +42,12 @@ button{
     border-radius: 25px;
     width: 100px;
     height: 40px;
+    font-size: 18px;
+}
+
+.course-table{
+    margin-top: 30px;
+    width: 90%;
 }
 
 nav ul{
@@ -60,7 +66,7 @@ nav ul li{
     grid-row: 1;
     position: fixed;
     top: 0px;
-    background-color: #0078D4;
+    background: radial-gradient(#6c9bf1,#164cfa);
     width: 100%;
     height: 48px;
     z-index: 1;
@@ -91,6 +97,7 @@ nav ul li{
   }
 
 .side-nav {
+    background: radial-gradient(#fff,#ffe7e7);
     grid-column: 1;
     grid-row: 2;
     position: fixed;
@@ -153,7 +160,7 @@ nav ul li{
     grid-column: 2;
     grid-row: 2;
     overflow-x: auto;
-    width: 90%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
     margin: auto;
