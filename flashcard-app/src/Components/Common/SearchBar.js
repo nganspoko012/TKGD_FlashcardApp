@@ -3,8 +3,7 @@ import './SearchBar.css';
 export default function SearchBar(){
     return (
         <div className="search-bar">
-            <i className="material-icons md-36">search</i>
-            <input type="text" className="search-bar-input" placeholder="Tìm kiếm học phần"/>
+            <input type="text" class="btn blue-gradient btn-rounded btn-sm my-0 waves-effect waves-light" placeholder="Tìm kiếm học phần..."/>
         </div>
     )
 }

@@ -18,16 +18,6 @@ export default function MainNav(){
                     <li><NavLink to="/help"><span>Trợ giúp</span></NavLink></li>
                 </ul>
             </nav>
-<<<<<<< HEAD
-            {/* <main>
-                <Switch>
-                    <Route path="/community" component={Community}></Route>
-                </Switch>
-                <Redirect to="/"/>
-            </main> */}
-        </BrowserRouter>
-=======
->>>>>>> 494d40253d3ad2f1f24a1673b157a4d21ad3a9a1
     </div>
     )
 }

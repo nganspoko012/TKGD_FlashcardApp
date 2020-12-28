@@ -11,11 +11,11 @@ export default function SideNav() {
     return (
         <nav className="side-nav">
             <UserInfo user={userInfo} />
-            <SideNavItem iconName='layers' content='Học phần' />
-            <SideNavItem iconName='receipt' content='Template' />
-            <SideNavItem iconName='insert_chart_outlined' content='Thống kê' />
-            <SideNavItem iconName='settings' content='Tùy chỉnh' />
-            <SideNavItem iconName='exit_to_app' content='Đăng xuất' />
+            <SideNavItem iconName='layers' content='Học phần' id="coursePage" />
+            <SideNavItem iconName='receipt' content='Template' id="template" />
+            <SideNavItem iconName='insert_chart_outlined' content='Thống kê' id="statistic" />
+            <SideNavItem iconName='settings' content='Tùy chỉnh' id="setting"/>
+            <SideNavItem iconName='exit_to_app' content='Đăng xuất' id="logout" />
         </nav>
     )
 }
