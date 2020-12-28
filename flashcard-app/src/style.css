@@ -33,6 +33,17 @@ body {
     column-gap: 20px;
 }
 
+
+button{
+    margin-top: 10px;
+}
+
+.btn-search{
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+}
+
 nav ul{
 	display: inline-block;
     list-style-type: none;

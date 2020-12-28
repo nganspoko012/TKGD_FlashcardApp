@@ -1,6 +1,7 @@
 import '../style.css';
 import Home from './Home/Home.js';
 import Community from './Community/Community.js';
+import CoursePage from './Course/CoursePage';
 
 import { Switch, Route } from "react-router-dom";
 import Courses from './Course/Courses';
@@ -13,6 +14,9 @@ export default function MainContent({ display }) {
             </Route>
             <Route path="/community">
                 <Community display={display}/>
+            </Route>
+            <Route path="/courses">
+                <CoursePage/>
             </Route>
             <Route path="/">
                 <Home display={display}/>
