@@ -1,0 +1,71 @@
+.courseHeader {
+  background-color: rgba(0, 120, 212, 1);
+  padding: 0 9px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid #ffff;
+}
+.rectangle3 {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(196, 196, 196, 0);
+  margin-right: 10px;
+}
+.line2 {
+  width: 1px;
+  height: 58px;
+  background-color: rgba(50, 49, 48, 0.2);
+  margin-right: 9px;
+}
+.tenHcPhn {
+  width: 500px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+.line5 {
+  width: 1px;
+  height: 58px;
+  background-color: rgba(50, 49, 48, 0.5);
+  margin-right: 9px;
+}
+.sTh {
+  width: 100px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+.danhGia {
+  width: 260px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+.tacGi {
+  width: 145px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+}
+.optionsFrames {
+  width: 30px;
+  height: 32px;
+  padding: 10px;
+}

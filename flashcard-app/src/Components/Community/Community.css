@@ -1,0 +1,24 @@
+.item-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* or 117% */
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  position: absolute;
+  width: 1200px;
+  height: 75px;
+
+  font-size: 24px;
+  padding: 10px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 50px;
+}
