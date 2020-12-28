@@ -1,14 +1,7 @@
 import './Flashcard.css';
 import Fields from './Fields.js'
-import flashcards from '../../Data/flashcards.json';
-import { useState } from 'react';
 
-export default function Flashcard() {
-    let flashcard = flashcards[0];
-    const [flip,setFlip] = useState(false);
-    function flashcardClick(e){
-        setFlip(!flip);
-    }
+export default function Flashcard({flashcard, flip, flashcardClick}) {
     return (
         <div className="flashcard" onClick={flashcardClick}>
             <div className={flip===false?"flashcard-wrapper":"flashcard-wrapper flip"}>

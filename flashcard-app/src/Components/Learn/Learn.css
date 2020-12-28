@@ -1,0 +1,81 @@
+
+.learn-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.learn-container:last-child {
+    margin-top: auto;
+}
+
+.progress-container {
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 5px;
+}
+
+.progress-bar {
+    width: 1000px;
+    height: 20px;
+    max-width: 100%;
+    background-color: #D2D0CE;
+}
+
+.progress-detail {
+    align-self: flex-end;
+}
+.mask {
+    width: 80%;
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+.seft-evaluate-button-group {
+    display: grid;
+    width: 1000px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: -20px;
+}
+
+.seft-evaluate-button {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    border-right: 0.5px solid white;
+}
+
+.seft-evaluate-button-group:nth-child(4) {
+    border: none;
+}
+
+.evaluate-repeat-button {
+    background-color: #F44336;
+}
+
+.evaluate-hard-button {
+    background-color: #F4511E;
+}
+
+.evaluate-normal-button {
+    background-color: #0078D4;
+}
+
+.evaluate-easy-button {
+    background-color: #43A047;
+}
