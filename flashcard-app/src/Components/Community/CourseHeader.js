@@ -8,7 +8,7 @@ const CourseHeader = ({
   tacGi = "Tác giả"
 }) => {
   return (
-    <div className={styles.courseHeader}>
+    <div style={{marginTop: 100}} className={styles.courseHeader}>
       <div className={styles.rectangle3} />
       <div className={styles.line2} />
       <p className={styles.tenHcPhn}>{tenHcPhn}</p>

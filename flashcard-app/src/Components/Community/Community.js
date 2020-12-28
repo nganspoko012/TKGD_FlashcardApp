@@ -12,6 +12,11 @@ export default function Community({ display }) {
         <div>
           <input className="search-bar" placeholder="Tìm kiếm"></input>
         </div>
+        <ul style={{display: 'flex', listStyle: 'none'}}>
+          <li style={{paddingLeft: 10}}><button style={{borderRadius: 10}}>English</button></li>
+          <li style={{paddingLeft: 10}}><button style={{borderRadius: 10}}>Vocabulary</button></li>
+          <li style={{paddingLeft: 10}}><button style={{borderRadius: 10}}>Animal</button></li>
+        </ul>
         <CourseHeader />
       </div>
     </div>
