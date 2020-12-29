@@ -1,2 +1,109 @@
-@import '../../style.css'
+@import '../../style.css';
 
+.my-courses-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.course-header {
+    width: 1300px;
+    height: 75px;
+    max-width: 100%;
+    background-color: #0078D4;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50px 1fr 120px 120px 120px 150px 120px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.course-item-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 1300px;
+    max-width: 90%;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.course-item {
+    text-decoration: none;
+    color: #000000;
+    width: 1300px;
+    height: 75px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.course-item:hover {
+    padding-bottom: 0px;
+    border-bottom: 5px solid #0078D4;
+}
+
+.course-item:active {
+    background-color: #524e4e38;
+}
+
+.course-item-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    flex-grow: 5;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.due-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.course-item-button-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+}
+
+.my-courses-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px){
+    .course-item-name {
+        font-size: 18px;
+    }
+    .my-courses-user {
+        display: none;
+    }
+}

@@ -30,5 +30,13 @@
         "displayName": "Yến Vy",
         "email": "yenvy@gmail.com",
         "avatarColor": "#F4511E"
+    },
+    {
+        "id": 5,
+        "username": "user5",
+        "password": "user5",
+        "displayName": "Người dùng",
+        "email": "user@gmail.com",
+        "avatarColor": "#F4511E"
     }
 ]
