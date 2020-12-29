@@ -19,7 +19,7 @@ export default function MainContent({ display }) {
             <Route path="/community">
                 <Community display={display}/>
             </Route>
-            <Route path="/courses">
+            <Route path="/coursePage">
                 <CoursePage/>
             </Route>
             <Route path="/">

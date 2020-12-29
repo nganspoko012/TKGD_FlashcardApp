@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDataGrid from '@inovua/reactdatagrid-community';
-import '@inovua/reactdatagrid-enterprise/index.css';
+import '@inovua/reactdatagrid-community/index.css';
 
 const columns = [
     { name: 'id', header: 'ID', maxWidth: 50, defaultFlex: 1 },
@@ -12,6 +12,15 @@ const columns = [
   ];
   
   const gridStyle = { minHeight: 550 };
+  
+  const headers = [
+    { name: "No#", field: "id", sortable: false },
+    { name: "Tên học phần", field: "nameCourse", sortable: true },
+    { name: "Tới hạn", field: "deadline", sortable: true },
+    { name: "Chưa học", field: "notLearned", sortable: false },
+    { name: "Đã học", field: "learned", sortable: false },
+    { name: "Tổng số", field: "totalCard", sortable: false }
+];
   
   const dataSource = [
     { id: 1, nameCourse: 'Animal', deadline: 1, notLearned:20, learned:39, totalCard:59 },
@@ -36,8 +45,8 @@ const columns = [
       
       return(
         <ReactDataGrid
-        className="course-table"
-        idProperty="id"
+        classname="course-table"
+        idproperty="id"
         columns={columns}
         dataSource={dataSource}
         style={gridStyle}
