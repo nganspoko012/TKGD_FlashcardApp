@@ -1,7 +1,7 @@
 import './Flashcard.css'
 import Field from './Field'
 
-export default function Fields({ fields, style }) {
+export default function Fields({ fields=[], style="" }) {
     return (
         <div className={style}>
             <div className="flashcard-button-group">

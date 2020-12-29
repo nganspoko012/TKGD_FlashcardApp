@@ -16,7 +16,7 @@ export default function Learn({ display }) {
             <div className="learn-container">
                 <ProgressBar />
                 <Flashcard flashcard={flashcard} flip={flip} flashcardClick={flashcardClick} />
-                <SeftEvaluateButton />
+                <SeftEvaluateButton show={flip}/>
             </div>
         </div>
     )
