@@ -19,6 +19,8 @@ export default function MainContent({ display }) {
             </Route>
             <Route path="/mycourses">
                 <MyCoursesPage />
+            <Route path="/coursePage">
+                <CoursePage/>
             </Route>
             <Route path="/learn/:courseId">
                     <DueFlashcardProvider>

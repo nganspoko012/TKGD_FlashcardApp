@@ -106,4 +106,19 @@
     .my-courses-user {
         display: none;
     }
+
+button{
+    margin-top: 10px;
+}
+
+.btn-search{
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.course-table{
+    margin-top: 30px;
+    width: 90%;
 }

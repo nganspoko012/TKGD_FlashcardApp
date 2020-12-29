@@ -9,7 +9,7 @@ export default function SideNav({ display }) {
     return (
         <nav className={display === true ? "side-nav" : "unactive"}>
             <UserInfo user={userInfo} />
-            <Link to='/courses'><SideNavItem iconName='layers' content='Học phần' /></Link>
+            <Link to='/coursePage'><SideNavItem iconName='layers' content='Học phần' /></Link>
             <Link to='/templates'><SideNavItem iconName='receipt' content='Template' /></Link>
             <Link to='/statistic'><SideNavItem iconName='insert_chart_outlined' content='Thống kê' /></Link>
             <Link to='/options'><SideNavItem iconName='settings' content='Tùy chỉnh' /></Link>
