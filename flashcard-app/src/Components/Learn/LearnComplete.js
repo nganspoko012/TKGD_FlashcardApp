@@ -8,8 +8,7 @@ export default function LearnComplete() {
                 <i className="material-icons md-48 completed">done</i>
                 <span>Hoàn thành</span>
             </div>
-            <div>Bạn đã học 10 thẻ trong 1 phút 30 giây</div>
-            <div className="learned-detail-group">
+            {/* <div className="learned-detail-group">
                 <div className="learned-detail">
                     <span>Khó</span>
                     <span className="hard">3</span>
@@ -22,7 +21,7 @@ export default function LearnComplete() {
                     <span>Dễ</span>
                     <span className="easy">2</span>
                 </div>
-            </div>
+            </div> */}
             <Link to='/courses' className="return-link">
                 <i className="material-icons md-24">keyboard_backspace</i>
                 <span>Về học phần</span>

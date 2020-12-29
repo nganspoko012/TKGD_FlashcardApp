@@ -4,6 +4,7 @@ import SideNav from './Components/SideNav';
 import './style.css';
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom'
+import { CoursesProvider } from './Components/Provider/CoursesProvider.js';
 
 export default function App() {
 
@@ -19,7 +20,9 @@ export default function App() {
             <div className="container">
                 <MainNav menuHandler={toggleSiveNav}/>
                 <SideNav display={sideNavDisplay}/>
-                <MainContent display={sideNavDisplay}/>
+                <CoursesProvider>
+                    <MainContent display={sideNavDisplay}/>
+                </CoursesProvider>
             </div>
         </BrowserRouter>
     )

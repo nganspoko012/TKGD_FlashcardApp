@@ -1,12 +1,12 @@
 import './Learn.css'
-export default function ProgressBar() {
+export default function ProgressBar({currentIndex, length}) {
     return (
         <div className="progress-container">
-            <div className="progress-detail">Animal: 9/10 Thẻ</div>
+            <div className="progress-detail">{currentIndex}/{length} Thẻ</div>
             <div className="progress-bar">
-                <div className="mask"></div>
+                <div className="mask" style={{width: currentIndex*100/length + '%'}}></div>
             </div>
-            <div className="progress-detail">01:30</div>
+            <div className="progress-detail">00:00</div>
         </div>
     )
 }

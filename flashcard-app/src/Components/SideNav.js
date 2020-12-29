@@ -2,13 +2,10 @@ import '../style.css'
 import SideNavItem from './SideNavItem'
 import UserInfo from './UserInfo/UserInfo'
 import { Link } from 'react-router-dom'
-
-const userInfo = {
-    email: "nganspoko012@gmail.com",
-    displayName: "Ngân Võ"
-};
+import { getUser } from './Provider/LoggedUserProvider'
 
 export default function SideNav({ display }) {
+    const userInfo = getUser(5);
     return (
         <nav className={display === true ? "side-nav" : "unactive"}>
             <UserInfo user={userInfo} />

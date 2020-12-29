@@ -7,8 +7,17 @@
     max-width: 100%;
     max-height: 90%;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
+@media (max-width: 600px){
+    .flashcard {
+        max-height: 30vh;
+    }
+}
 .flashcard-wrapper {
     position: relative;
     width: 100%;
@@ -19,19 +28,12 @@
 }
 
 .prev-button, .next-button {
-    position: absolute;
-    top: 50%;
     color: #0078D4;
     width: 50px;
     height: 50px;
 }
 
-.prev-button {
-    left: -50px;
-}
-
 .next-button {
-    right: -50px;
     transform: rotateY(180deg);
 }
 

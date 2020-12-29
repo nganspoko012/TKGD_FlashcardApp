@@ -102,4 +102,105 @@
         "dueDay": "2020-12-22T00:00:00.969Z",
         "lastedLearnDate": "2020-12-20T00:00:00.969Z"
     }
+    ,
+    {
+        "id": 6,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "commensurate"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(adj)"
+            },
+            {
+                "content": "in proportion to, corresponding, equal to"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 7,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "hesitant"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(adj)"
+            },
+            {
+                "content": "reluctant, with reservation"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 8,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "recognition"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n)"
+            },
+            {
+                "content": "credit, praise for doing something well"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 9,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "merchandise"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n)"
+            },
+            {
+                "content": "item available in stores"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    },
+    {
+        "id": 10,
+        "courseId": 1,
+        "frontFields": [
+            {
+                "content": "prerequisite"
+            }
+        ],
+        "backFields": [
+            {
+                "content": "(n)"
+            },
+            {
+                "content": "something that is require or necessary as a prior condition"
+            }
+        ],
+        "createdDate": "2020-12-20T00:00:00.969Z",
+        "dueDay": "2020-12-22T00:00:00.969Z",
+        "lastedLearnDate": "2020-12-20T00:00:00.969Z"
+    }
 ]

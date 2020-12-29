@@ -1,0 +1,25 @@
+@import '../../style.css';
+
+.search-bar {
+    margin-top: 20px;
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.search-bar-icon {
+    margin-left: 10px;
+}
+
+.search-bar-input {
+    all: unset;
+    height: 100%;
+    width: 90%;
+}

@@ -1,37 +1,105 @@
 [
     {
         "id": 1,
-        "name": "Animal",
-        "isPublic": true,
-        "dueCards": 100,
+        "name": "600 Essential Words For TOEIC",
+        "isPublic": false,
+        "dueCards": 10,
         "totalCards": 200,
-        "userId": 1,
+        "tags": ["English", "Vocabulary", "TOEIC"],
+        "userId": 5,
         "rating": 4.5
     },
     {
+        "id": 2,
         "name": "English Grammar",
-        "isPublic": true,
-        "dueCards": 50,
+        "isPublic": false,
+        "dueCards": 0,
         "totalCards": 100,
-        "userId": 1,
+        "tags": ["English", "Grammer"],
+        "userId": 5,
         "rating": 4
     },
     {
-        "id": 2,
-        "name": "600 Essential Words For TOEIC",
+        "id": 3,
+        "name": "Animal",
         "isPublic": true,
-        "dueCards": 20,
+        "dueCards": 0,
         "totalCards": 200,
+        "tags": ["English", "Vocabulary"],
         "userId": 2,
         "rating": 5
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "1945 Kanji",
         "isPublic": true,
-        "dueCards": 15,
+        "dueCards": 0,
         "totalCards": 30,
+        "tags": ["Japanese", "Kanji"],
         "userId": 3,
         "rating": 3.5
+    }
+    ,
+    {
+        "id": 5,
+        "name": "IELTS Vocabulary",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 30,
+        "tags": ["IELTS", "Vocabulary"],
+        "userId": 3,
+        "rating": 4
+    }
+    ,
+    {
+        "id": 6,
+        "name": "IELTS Grammar",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 50,
+        "tags": ["IELTS", "Vocabulary"],
+        "userId": 5,
+        "rating": 4
+    },
+    {
+        "id": 7,
+        "name": "Basic Chinese",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 30,
+        "tags": ["Chinese", "Vocabulary"],
+        "userId": 2,
+        "rating": 4.3
+    }
+    ,
+    {
+        "id": 8,
+        "name": "JLPT N2",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 1000,
+        "tags": ["Japanese", "JLPT"],
+        "userId": 5,
+        "rating": 3.5
+    },
+    {
+        "id": 9,
+        "name": "JLPT N1",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 2000,
+        "tags": ["Japanese", "JLPT"],
+        "userId": 5,
+        "rating": 3.5
+    },
+    {
+        "id": 10,
+        "name": "English Idioms",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 500,
+        "tags": ["English"],
+        "userId": 3,
+        "rating": 5
     }
 ]
