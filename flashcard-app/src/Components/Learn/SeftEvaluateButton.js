@@ -1,8 +1,8 @@
 import './Learn.css'
 
-export default function SeftEvaluateButton(){
+export default function SeftEvaluateButton({show}){
     return (
-        <div className="seft-evaluate-button-group">
+        <div className={show===true?"seft-evaluate-button-group":"unactive"}>
             <div className="seft-evaluate-button evaluate-repeat-button">
                 <div>Học lại</div>
                 <div>1 phút</div>
