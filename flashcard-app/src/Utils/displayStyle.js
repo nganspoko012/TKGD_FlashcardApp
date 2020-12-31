@@ -1,6 +1,6 @@
 
 const displayStyle = {
-    width: '80%',
+    width: "80%",
     gridColumn: '1 / 3',
     margin: "auto"
 }

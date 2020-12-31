@@ -9,20 +9,6 @@
     gap: 50px;
 }
 
-.course-header {
-    width: 1300px;
-    height: 75px;
-    max-width: 100%;
-    background-color: #0078D4;
-    color: #FFFFFF;
-    display: grid;
-    grid-template-columns: 50px 1fr 120px 120px 120px 150px 120px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
 .course-item-row {
     display: flex;
     justify-content: flex-start;
@@ -34,14 +20,16 @@
     gap: 20px;
 }
 
+
 .course-item {
     text-decoration: none;
     color: #000000;
     width: 1300px;
     height: 75px;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     background-color: #FFFFFF;
     padding-left: 10px;
@@ -49,6 +37,14 @@
     margin-bottom: 5px;
     box-sizing: border-box;
     cursor: pointer;
+}
+
+.course-item-info-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .course-item:hover {
@@ -64,14 +60,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    flex-grow: 5;
-    padding-left: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
+
 
 .due-detail {
     display: flex;
@@ -87,7 +77,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: auto;
 }
 
 .my-courses-user {
@@ -106,6 +95,7 @@
     .my-courses-user {
         display: none;
     }
+}
 
 button{
     margin-top: 10px;
