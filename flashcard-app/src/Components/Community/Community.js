@@ -24,6 +24,7 @@ export default function Community({ display }) {
     
   if(selectedTag==="clear")
     filteredPublicCoursesUsers = publicCoursesUsers;
+
   return (
     <div className="content-container" style={display === false ? displayStyle : {}}>
       <div className="community-container">

@@ -13,6 +13,7 @@ export default function Learn({ display }) {
     const coursesDueFlashcards = dueFlashcards.filter(flashcard => flashcard.courseId.toString() === courseId);
     const [flip, setFlip] = useState(false);
     const [currentFlashcardIndex, setCurrentFlashcardIndex] = useState(0);
+
     function changeFlashcard(i) {
         if (i < 0)
             return;
@@ -24,11 +25,14 @@ export default function Learn({ display }) {
         setCurrentFlashcardIndex(i);
         console.log(currentFlashcardIndex);
     }
+
     const [completed, setCompleted] = useState(false)
+
     function flashcardClick(e) {
         setFlip(!flip);
         console.log(flip);
     }
+    
     let showedContent = () => completed === false ? <Flashcard flashcard={coursesDueFlashcards[currentFlashcardIndex]} currentIndex={currentFlashcardIndex} changeFlashcard={changeFlashcard}
         learn={learnFlashcard} flip={flip} flashcardClick={flashcardClick} /> : <LearnComplete />;
 

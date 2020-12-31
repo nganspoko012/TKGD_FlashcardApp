@@ -4,7 +4,7 @@ import Field from './Field'
 export default function Fields({ fields=[], style="" }) {
     return (
         <div className={style}>
-            <div className="flashcard-button-group">
+            <div className="flashcard-button-group" onClick={(e) => e.stopPropagation()}>
                 <button className="flashcard-button"><i className="material-icons md-24">star</i></button>
                 <button className="flashcard-button"><i className="material-icons md-24">edit</i></button>
                 <button className="flashcard-button"><i className="material-icons md-24">more_vert</i></button>

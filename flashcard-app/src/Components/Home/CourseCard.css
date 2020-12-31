@@ -1,7 +1,6 @@
 @import '../../style.css';
 
 .course-card {
-    width: 350px;
     height: 150px;
     max-width: 100%;;
     background-color: #ffffff;
@@ -14,6 +13,7 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+
 
 .course-card:hover {
     border-bottom: 5px solid #0078D4;  
@@ -60,15 +60,6 @@
     align-items: center;
     padding-left: 10px;
     margin-bottom: 5px;
-}
-
-
-@media (max-width: 1500px){
-    .course-container {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 .due-info {

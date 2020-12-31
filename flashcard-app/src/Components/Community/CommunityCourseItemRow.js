@@ -5,7 +5,7 @@ export default function CourseItemRow({courses=[]}){
     return (
         <div className="course-item-row">
             {courses.map((course, i) => 
-                <CommunityCourseItem course={course}/>)}
+                <CommunityCourseItem key={i} course={course}/>)}
         </div>
     )
 }

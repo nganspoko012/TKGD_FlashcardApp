@@ -1,7 +1,6 @@
 import CourseCard from './CourseCard';
 import CommunityCourseCard from './CommunityCourseCard';
 import './Home.css';
-import users from '../../Data/users.json';
 import displayStyle from '../../Utils/displayStyle'
 import Banner from './Banner.js';
 import { useCourses } from '../Provider/CoursesProvider.js'

@@ -52,8 +52,7 @@
 }
 
 .community-course-item {
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr;
+  display: flex;
   width: 1300px;
   height: 75px;
   max-width: 100%;
@@ -72,12 +71,19 @@
   padding-bottom: 0px;
 }
 
+.right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
 .rating {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .community-course-detail {
@@ -91,7 +97,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
