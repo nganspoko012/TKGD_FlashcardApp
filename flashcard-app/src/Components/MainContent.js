@@ -19,14 +19,15 @@ export default function MainContent({ display }) {
             </Route>
             <Route path="/mycourses">
                 <MyCoursesPage />
+            </Route>
             <Route path="/coursePage">
-                <CoursePage/>
+                <CoursePage />
             </Route>
             <Route path="/learn/:courseId">
-                    <DueFlashcardProvider>
-                        <Learn display={display} />
-                    </DueFlashcardProvider>
-                </Route>
+                <DueFlashcardProvider>
+                    <Learn display={display} />
+                </DueFlashcardProvider>
+            </Route>
             <Route path="/">
                 <Home display={display} />
             </Route>
