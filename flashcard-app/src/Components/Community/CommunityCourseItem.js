@@ -3,14 +3,13 @@ import Avatar from '../UserInfo/Avatar.js'
 import { Link, useRouteMatch } from 'react-router-dom'
 import Tag from './Tag'
 
-export default function CourseItem({ course = {}, added = false, toggleAdd = f => f }) {
+export default function ComunityCourseItem({ course = {}, added = false, toggleAdd = f => f }) {
     let match = useRouteMatch();
     return (
         <div className="wrapper">
             <div className="community-course-item">
                 <div className="community-course-detail">
                     <div className="course-item-name">
-                        <i className="material-icons md-24">{course.isPublic ? "public" : "lock"}</i>
                         <span>{course.name}</span>
                     </div>
                     <div className="due-detail">

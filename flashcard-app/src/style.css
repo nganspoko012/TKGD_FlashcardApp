@@ -23,6 +23,8 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 18px;
     margin-left: 0px;
+    color: #323130;
+    background-color: #F8F8F8;
 }
 
 .container {
@@ -175,15 +177,16 @@ nav ul li{
 }
 
 .button {
-    cursor: pointer;;
-}
-
-.button:hover {
+    cursor: pointer;
     color: #0078D4;
 }
 
+.button:hover {
+    background-color: #F3F2F1;
+}
+
 .button:active {
-    color: #362d2d91;
+    background-color: #EDEBE9;
 }
 
 @media (max-width:900px){
