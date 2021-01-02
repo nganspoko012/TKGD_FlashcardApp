@@ -9,7 +9,7 @@ import {getCoursesUser} from '../../Utils/coursesUser';
 
 export default function Home( {display} ) {
     const {courses} = useCourses();
-    let user = getUser(5);
+    const user = getUser(5);
     const maxNCoursesUsers = 4;
     let coursesUsers = getCoursesUser(courses);
     let personalCourses = coursesUsers.filter(course => course.userId === user.id);
