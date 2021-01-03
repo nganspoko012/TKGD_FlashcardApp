@@ -7,23 +7,42 @@ import { getUser } from '../Provider/LoggedUserProvider';
 import { getCoursesUser } from '../../Utils/coursesUser.js'
 import Tag from './Tag'
 import { useEffect, useState } from 'react';
+import CourseAddedNotify from './CourseAddedNotify';
 
 export default function Community({ display }) {
-  const tags = ["English", "Vocabulary", "Animal", "Grammar", "TOEIC", "IELTS", "Japanese", "JLPT", "more...", "clear"];
+  const tags = ["English", "Vocabulary", "Animal", "Grammar", "TOEIC", "IELTS", "Japanese", "JLPT", "all"];
   const [selectedTag, setSelectedTag] = useState("");
-  const [addedItem, setAddedItem] = useState(false);
   const { courses } = useCourses();
+  const [addedCourseName, setAddedCourseName] = useState("");
+  const [showAddedDialogue, setShowAddedDialogue] = useState(false);
+
+  //prepare data for dis play course user
   let publicCourses = courses.filter(course => course.userId !== getUser(5).id && course.isPublic == true);
   let publicCoursesUsers = getCoursesUser(publicCourses);
-  let toggleSelectedTag = (tag) => {
-    setSelectedTag(tag);
-  };
   let filteredPublicCoursesUsers = publicCoursesUsers;
   if (selectedTag !== "" && selectedTag !== "...more")
     filteredPublicCoursesUsers = publicCoursesUsers.filter(course => course.tags.includes(selectedTag));
 
-  if (selectedTag === "clear")
+  if (selectedTag === "all")
     filteredPublicCoursesUsers = publicCoursesUsers;
+
+
+  let toggleSelectedTag = (tag) => {
+    setSelectedTag(tag);
+  };
+
+  let onAddCourse = (name) => {
+    if (name != "")
+    {
+      setAddedCourseName(name);
+      setShowAddedDialogue(true);
+      handleShowAddedDialogue();
+    }
+  }
+
+  let handleShowAddedDialogue = () => 
+    setTimeout(() => setShowAddedDialogue(false)
+                    , 3000);
 
   return (
     <div className="content-container" style={display === false ? displayStyle : {}}>
@@ -36,8 +55,8 @@ export default function Community({ display }) {
             </div>
           </div>
         </div>
-
-        <CommunityCourseItemRow courses={filteredPublicCoursesUsers} />
+        <CourseAddedNotify show={showAddedDialogue} addedCourseName={addedCourseName}/>
+        <CommunityCourseItemRow courses={filteredPublicCoursesUsers} onCourseItemAdded={onAddCourse} />
       </div>
     </div>
   )

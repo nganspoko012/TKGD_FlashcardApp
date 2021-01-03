@@ -12,8 +12,7 @@ export default function CourseItem({ course = {} }) {
                     <span>{course.name}</span>
                 </div>
                 <div className="due-detail">
-                    <span>{course.totalCards} thẻ</span>
-                    <span>-</span>
+                    <span className="total-cards-detail">{course.totalCards} thẻ</span>
                     <span><span className="due">{course.dueCards}</span> thẻ tới hạn</span>
                 </div>
             </div>

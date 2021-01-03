@@ -189,6 +189,12 @@ nav ul li{
     background-color: #EDEBE9;
 }
 
+.fix-bottom {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
 @media (max-width:900px){
     .content-container {
         grid-column: 1 / 3;

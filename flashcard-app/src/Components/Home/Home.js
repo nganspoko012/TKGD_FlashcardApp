@@ -10,7 +10,7 @@ import {getCoursesUser} from '../../Utils/coursesUser';
 export default function Home( {display} ) {
     const {courses} = useCourses();
     const user = getUser(5);
-    const maxNCoursesUsers = 4;
+    const maxNCoursesUsers = 8;
     let coursesUsers = getCoursesUser(courses);
     let personalCourses = coursesUsers.filter(course => course.userId === user.id);
     let communityCourses = coursesUsers.filter(course => course.userId !== user.id);

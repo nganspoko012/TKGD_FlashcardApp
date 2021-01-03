@@ -1,11 +1,11 @@
 import './Community.css';
 import CommunityCourseItem from './CommunityCourseItem';
 
-export default function CourseItemRow({courses=[]}){
+export default function CourseItemRow({courses=[], onCourseItemAdded = f=>f}){
     return (
-        <div className="course-item-row">
+        <div className="community-course-item-row">
             {courses.map((course, i) => 
-                <CommunityCourseItem key={i} course={course}/>)}
+                <CommunityCourseItem key={i} course={course} handleAdded={onCourseItemAdded}/>)}
         </div>
     )
 }
