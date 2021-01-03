@@ -2,12 +2,20 @@ import './Community.css';
 import Avatar from '../UserInfo/Avatar.js'
 import { Link, useRouteMatch } from 'react-router-dom'
 import Tag from './Tag'
+import { useEffect, useState } from 'react';
 
-export default function ComunityCourseItem({ course = {}, added = false, toggleAdd = f => f }) {
+export default function ComunityCourseItem({ course = {}, handleAdded = f => f }) {
     let match = useRouteMatch();
+    const [added, setAdded] = useState(false);
+    let onAdded = (e) => {
+        e.stopPropagation();
+        setAdded(true);
+        handleAdded(course.name);
+    }
+
     return (
-        <div className="wrapper">
-            <div className="community-course-item">
+        <div className="community-course-item-wrapper">
+            <div className={added ? "community-course-item added" : "community-course-item"}>
                 <div className="community-course-detail">
                     <div className="course-item-name">
                         <span>{course.name}</span>
@@ -26,8 +34,11 @@ export default function ComunityCourseItem({ course = {}, added = false, toggleA
                         <span>{course.user.displayName}</span>
                     </div>
                     <div className="community-course-button-group">
-                        <i className="material-icons md-36 button" title="thêm vào học phần của bạn" onClick={()=>toggleAdd(true)}>{added === true ? "done" : "add"}</i>
-                        <i className="material-icons md-36 button">navigate_next</i>
+                        <i className={added ? "material-icons md-36 completed" : "material-icons md-36 button"}
+                            title={added ? "Học phần đã thêm" : "thêm vào học phần của bạn"}
+                            onClick={(e) => onAdded(e)}>{added === true ? "done" : "add"}
+                        </i>
+                        <i className={added ? "material-icons md-36 completed" : "material-icons md-36 button"}>navigate_next</i>
                     </div>
                 </div>
 
