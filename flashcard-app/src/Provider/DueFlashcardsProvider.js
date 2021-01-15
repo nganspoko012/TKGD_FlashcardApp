@@ -1,5 +1,5 @@
 import { createContext, useState, useContext} from 'react';
-import flashcards from '../../Data/flashcards.json';
+import flashcards from '../Data/flashcards.json';
 
 const DueFlashcardsContext = createContext();
 

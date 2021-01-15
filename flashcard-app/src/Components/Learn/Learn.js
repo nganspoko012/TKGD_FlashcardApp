@@ -4,10 +4,10 @@ import SeftEvaluateButton from './SeftEvaluateButton.js'
 import LearnComplete from './LearnComplete.js'
 import displayStyle from '../../Utils/displayStyle.js'
 import { useState } from 'react'
-import { useDueFlashcards } from '../Provider/DueFlashcardsProvider.js'
+import { useDueFlashcards } from '../../Provider/DueFlashcardsProvider.js'
 import { useParams } from 'react-router-dom'
 
-export default function Learn({ display }) {
+export default function Learn() {
     let { courseId } = useParams();
     const { dueFlashcards, learnFlashcard } = useDueFlashcards();
     const coursesDueFlashcards = dueFlashcards.filter(flashcard => flashcard.courseId.toString() === courseId);
@@ -37,12 +37,12 @@ export default function Learn({ display }) {
         learn={learnFlashcard} flip={flip} flashcardClick={flashcardClick} /> : <LearnComplete />;
 
     if(coursesDueFlashcards.length <= 0) 
-        return (<div className="content-container" style={display === false ? displayStyle : {}}>
+        return (<div className="content-container">
                     Không có thẻ tới hạn trong học phần này!
             </div>)
 
     return (
-        <div className="content-container" style={display === false ? displayStyle : {}}>
+        <div className="content-container">
             <div className="learn-container">
                 <ProgressBar currentIndex={currentFlashcardIndex} length={coursesDueFlashcards.length} />
                 {showedContent()}

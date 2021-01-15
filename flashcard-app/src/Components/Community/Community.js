@@ -1,15 +1,14 @@
 import './Community.css';
-import displayStyle from '../../Utils/displayStyle';
 import MySearchBar from '../Common/MySearchBar.js';
 import CommunityCourseItemRow from './CommunityCourseItemRow';
-import { useCourses } from '../Provider/CoursesProvider';
-import { getUser } from '../Provider/LoggedUserProvider';
+import { useCourses } from '../../Provider/CoursesProvider';
+import { getUser } from '../../Provider/LoggedUserProvider';
 import { getCoursesUser } from '../../Utils/coursesUser.js'
 import Tag from './Tag'
 import { useEffect, useState } from 'react';
 import CourseAddedNotify from './CourseAddedNotify';
 
-export default function Community({ display }) {
+export default function Community() {
   const tags = ["English", "Vocabulary", "Animal", "Grammar", "TOEIC", "IELTS", "Japanese", "JLPT", "all"];
   const [selectedTag, setSelectedTag] = useState("");
   const { courses } = useCourses();
@@ -45,7 +44,7 @@ export default function Community({ display }) {
                     , 3000);
 
   return (
-    <div className="content-container" style={display === false ? displayStyle : {}}>
+    <div className="content-container">
       <div className="community-container">
         <div className="search-group-wrapper">
           <div className="search-group">
