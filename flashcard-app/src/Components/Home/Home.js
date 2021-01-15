@@ -1,13 +1,12 @@
 import CourseCard from './CourseCard';
 import CommunityCourseCard from './CommunityCourseCard';
 import './Home.css';
-import displayStyle from '../../Utils/displayStyle'
 import Banner from './Banner.js';
-import { useCourses } from '../Provider/CoursesProvider.js'
-import {getUser} from '../Provider/LoggedUserProvider';
+import { useCourses } from '../../Provider/CoursesProvider.js'
+import {getUser} from '../../Provider/LoggedUserProvider';
 import {getCoursesUser} from '../../Utils/coursesUser';
 
-export default function Home( {display} ) {
+export default function Home() {
     const {courses} = useCourses();
     const user = getUser(5);
     const maxNCoursesUsers = 8;
@@ -17,7 +16,7 @@ export default function Home( {display} ) {
 
     
     return (
-        <div className="content-container" style={ display===false?displayStyle:{}}>
+        <div className="content-container">
             <div className="home-container">
                 <Banner />
                 <div className="courses-wrapper">

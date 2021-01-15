@@ -28,28 +28,20 @@ body {
 }
 
 .container {
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 240px auto;
-    grid-template-rows: 48px auto;
-    column-gap: 20px;
+    height: 100%;
 }
 
-
-nav ul{
-	display: inline-block;
-    list-style-type: none;
-    margin-top: 0px;
-    padding-left: 0px;
-}
-
-nav ul li{
-	display: inline-block;
+.bottom-wrapper {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
 }
 
 .main-nav {
-    grid-column: 1 / 3;
-    grid-row: 1;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -57,6 +49,18 @@ nav ul li{
     z-index: 1;
     white-space:nowrap;
     background-color: #0078D4;
+    box-sizing: border-box;
+}
+
+nav ul{
+	display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav ul li{
+	display: inline-block;
 }
 
 .main-nav a {
@@ -83,16 +87,14 @@ nav ul li{
   }
 
 .side-nav {
-    grid-column: 1;
-    grid-row: 2;
-    position: fixed;
+    position: sticky;
     top: 48px;
-    overflow-y: auto;
+    left: 0px;
     background-color: #ffffff;
     max-width: 240px;
     min-width: 200px;
     width: 100%;
-    height: 100%;
+    height: 95vh;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -142,16 +144,13 @@ nav ul li{
 }
 
 .content-container {
-    grid-column: 2;
-    grid-row: 2;
     overflow-x: auto;
-    width: 100%;
+    width: 90%;
     height: 100%;
     box-sizing: border-box;
-    margin: auto;
 }
 
-.unactive {
+.not-show {
     display: none;
 }
 
@@ -196,11 +195,8 @@ nav ul li{
 }
 
 @media (max-width:900px){
-    .content-container {
-        grid-column: 1 / 3;
-        margin: 0px;
-    }
     .side-nav {
-        display: none;
+        position: fixed;
+        z-index: 1;
     }
 }

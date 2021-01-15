@@ -2,11 +2,10 @@
 import MySearchBar from '../Common/MySearchBar.js'
 import './Courses.css'
 import CourseItemRow from './CourseItemRow.js';
-import { useCourses } from '../Provider/CoursesProvider.js'
-import {getUser} from '../Provider/LoggedUserProvider.js';
-import displayStyle from '../../Utils/displayStyle.js'
+import { useCourses } from '../../Provider/CoursesProvider.js'
+import {getUser} from '../../Provider/LoggedUserProvider.js';
 
-export default function MyCoursesPage({ display }) {
+export default function MyCoursesPage() {
     const { courses } = useCourses();
     const  loggedUser  = getUser(5);
     let coursesUsers = courses.filter(course => course.userId === loggedUser.id)
@@ -16,7 +15,7 @@ export default function MyCoursesPage({ display }) {
                         });
 
     return (
-        <div className="content-container" style={display === false ? displayStyle : {}}>
+        <div className="content-container">
             <div className="my-courses-container">
                 <MySearchBar />
                 <CourseItemRow courses={coursesUsers} />

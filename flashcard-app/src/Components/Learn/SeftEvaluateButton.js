@@ -6,7 +6,7 @@ export default function SeftEvaluateButton({show, learn=f=>f, flashcardId=0, cha
         changeFlashcard(currentIndex+1);
     }
     return (
-        <div className={show===true?"seft-evaluate-button-group":"unactive"}>
+        <div className={show===true?"seft-evaluate-button-group":"not-show"}>
             <div className="seft-evaluate-button evaluate-repeat-button" onClick={() => handleClick() }>
                 <div>Học lại</div>
                 <div>1 phút</div>
