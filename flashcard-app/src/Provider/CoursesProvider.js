@@ -14,7 +14,6 @@ export function CoursesProvider({ children }) {
             course.id === id
             );
     };
-
     return (
         <CoursesContext.Provider value={{ courses, learnCourse, getCourse }}>
             {children}
