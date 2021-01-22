@@ -1,8 +1,16 @@
 import './Courses.css';
 import Avatar from '../UserInfo/Avatar.js'
-import { Link } from 'react-router-dom'
+import { Link, useRouteMatch, useHistory } from 'react-router-dom'
 
 export default function CourseItem({ course = {} }) {
+    let match = useRouteMatch();
+    const history = useHistory();
+
+    const addFlashCard = (e) => {
+      e.preventDefault(); // Disable Link tag
+      history.push(`add_flashcard/${course.id}`);
+    }
+
     return (
         <Link to={`/learn/${course.id}`} className="course-item">
             <div className="course-item-detail">
@@ -21,7 +29,7 @@ export default function CourseItem({ course = {} }) {
                     <span>{course.user.displayName}</span>
                 </div>
                 <div className="course-item-button-group">
-                    <i className="material-icons md-24 button" title="Thêm">add</i>
+                    <i className="material-icons md-24 button" title="Thêm"  onClick={addFlashCard}>add</i>
                     <i className="material-icons md-24 button" title="Chỉnh sửa">edit</i>
                     <i className="material-icons md-24 button" title="Xóa">delete</i>
                     <i className="material-icons md-24 button" title="Chi tiết">navigate_next</i>

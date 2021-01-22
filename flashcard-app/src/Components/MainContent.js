@@ -6,6 +6,7 @@ import Learn from './Learn/Learn.js';
 import MyCoursesPage from './Course/MyCoursesPage';
 import CourseAddPage from './Course/CourseAddPage';
 import { DueFlashcardProvider } from '../Provider/DueFlashcardsProvider';
+import AddFlashCard from '../Components/Flashcard/FLashcard.test';
 
 export default function MainContent() {
     return (
@@ -20,6 +21,9 @@ export default function MainContent() {
                 <DueFlashcardProvider>
                     <Learn/>
                 </DueFlashcardProvider>
+            </Route>
+            <Route path="/add_flashcard/:courseId">
+               <AddFlashCard />
             </Route>
             <Route path="/">
                 <Home/>
