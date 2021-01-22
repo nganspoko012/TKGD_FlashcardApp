@@ -11,9 +11,9 @@ export default function SideNav({ display }) {
             <UserInfo user={userInfo} />
             <Link to='/courses'><SideNavItem iconName='layers' content='Học phần' /></Link>
             <Link to='/templates'><SideNavItem iconName='receipt' content='Template' /></Link>
-            <Link to='/statistic'><SideNavItem iconName='insert_chart_outlined' content='Thống kê' /></Link>
-            <Link to='/options'><SideNavItem iconName='settings' content='Tùy chỉnh' /></Link>
-            <Link to='/logout'><SideNavItem iconName='exit_to_app' content='Đăng xuất' /></Link>
+            <Link to='/statistic'><SideNavItem iconName='insert_chart_outlined' content='Thống kê'/></Link>
+            <Link to='/options'><SideNavItem iconName='settings' content='Tùy chỉnh'/></Link>
+            <Link to='/logout'><SideNavItem iconName='exit_to_app' content='Đăng xuất'/></Link>
         </nav>
     )
 }

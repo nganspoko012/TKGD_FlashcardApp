@@ -22,7 +22,7 @@ export default function Home() {
                 <Banner />
                 <div className="courses-wrapper">
                     <div className="more-info">
-                        <div>Học phần của bạn</div>
+                        <h3>Học phần của bạn</h3>
                         <div className="more-info-link">
                             <Link href="/courses">Xem tất cả</Link>
                             <i className="material-icons md-24">navigate_next</i>
@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
                 <div className="courses-wrapper">
                     <div className="more-info">
-                        <div>Học phần mới từ cộng đồng</div>
+                        <h3>Học phần mới từ cộng đồng</h3>
                         <div className="more-info-link">
                             <Link href="/community">Xem tất cả</Link>
                             <i className="material-icons md-24">navigate_next</i>

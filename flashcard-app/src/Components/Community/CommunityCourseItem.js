@@ -27,7 +27,7 @@ export default function ComunityCourseItem({ course = {}, handleAdded = f => f }
                 <div className="right-wrapper">
                     <div className="rating">
                         <span>{course.rating}</span>
-                        <Rating name="read-only" value={course.rating} readOnly size="medium"/>
+                        <Rating name="read-only" value={course.rating} precision={0.5} readOnly size="medium"/>
                     </div>
                     <div className="my-courses-user">
                         <Avatar letter={course.user.displayName.charAt(0)} color={course.user.avatarColor} size="32px" />
@@ -35,10 +35,10 @@ export default function ComunityCourseItem({ course = {}, handleAdded = f => f }
                     </div>
                     <div className="community-course-button-group">
                         <i className={added ? "material-icons md-36 completed" : "material-icons md-36 button"}
-                            title={added ? "Học phần đã thêm" : "thêm vào học phần của bạn"}
+                            title={added ? "Học phần đã thêm" : "Thêm vào học phần của bạn"}
                             onClick={(e) => onAdded(e)}>{added === true ? "done" : "add"}
                         </i>
-                        <i className={added ? "material-icons md-36 completed" : "material-icons md-36 button"}>navigate_next</i>
+                        <i className={added ? "material-icons md-36 completed" : "material-icons md-36 button"} title="Xem chi tiết">navigate_next</i>
                     </div>
                 </div>
 
