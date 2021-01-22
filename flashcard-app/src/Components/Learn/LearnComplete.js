@@ -1,9 +1,16 @@
 import './Learn.css'
 import { Link } from 'react-router-dom'
+import {useEffect} from 'react'
+import { useCourses } from '../../Provider/CoursesProvider.js'
 
-export default function LearnComplete() {
+
+export default function LearnComplete({courseId}) {
+    const {learnCourse} = useCourses();
+    useEffect( () =>
+        learnCourse(Number(courseId)), []
+    )
     return (
-        <div className="learn-container">
+        <div className="learn-container" >
             <div className="complete-text">
                 <i className="material-icons md-48 completed">done</i>
                 <span>Hoàn thành</span>
