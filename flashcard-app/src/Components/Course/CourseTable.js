@@ -13,14 +13,14 @@ const columns = [
   
   const gridStyle = { minHeight: 550 };
   
-  const headers = [
-    { name: "No#", field: "id", sortable: false },
-    { name: "Tên học phần", field: "nameCourse", sortable: true },
-    { name: "Tới hạn", field: "deadline", sortable: true },
-    { name: "Chưa học", field: "notLearned", sortable: false },
-    { name: "Đã học", field: "learned", sortable: false },
-    { name: "Tổng số", field: "totalCard", sortable: false }
-];
+//   const headers = [
+//     { name: "No#", field: "id", sortable: false },
+//     { name: "Tên học phần", field: "nameCourse", sortable: true },
+//     { name: "Tới hạn", field: "deadline", sortable: true },
+//     { name: "Chưa học", field: "notLearned", sortable: false },
+//     { name: "Đã học", field: "learned", sortable: false },
+//     { name: "Tổng số", field: "totalCard", sortable: false }
+// ];
   
   const dataSource = [
     { id: 1, nameCourse: 'Animal', deadline: 1, notLearned:20, learned:39, totalCard:59 },

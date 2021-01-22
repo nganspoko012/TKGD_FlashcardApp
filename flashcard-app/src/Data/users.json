@@ -39,4 +39,21 @@
         "email": "user@gmail.com",
         "avatarColor": "#F4511E"
     }
+    ,
+    {
+        "id": 6,
+        "username": "user6",
+        "password": "user6",
+        "displayName": "Văn Nguyễn",
+        "email": "user6@gmail.com",
+        "avatarColor": "#107C10"
+    },
+    {
+        "id": 7,
+        "username": "user7",
+        "password": "user7",
+        "displayName": "Châu Thành",
+        "email": "user7@gmail.com",
+        "avatarColor": "#38618C"
+    }
 ]

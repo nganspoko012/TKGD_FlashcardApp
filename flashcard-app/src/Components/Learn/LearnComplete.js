@@ -7,7 +7,7 @@ import { useCourses } from '../../Provider/CoursesProvider.js'
 export default function LearnComplete({courseId}) {
     const {learnCourse} = useCourses();
     useEffect( () =>
-        learnCourse(Number(courseId)))
+        learnCourse(Number(courseId)));
     return (
         <div className="learn-container" >
             <div className="complete-text">

@@ -1,14 +1,18 @@
 import './Community.css';
+import '../Common/Common.css'
 import CommunityCourseItemRow from './CommunityCourseItemRow';
 import { useCourses } from '../../Provider/CoursesProvider';
 import { getUser } from '../../Provider/LoggedUserProvider';
 import { getCoursesUser } from '../../Utils/coursesUser.js'
 import Tag from './Tag'
-import {  useState } from 'react';
+import { useState } from 'react';
 import CourseAddedNotify from './CourseAddedNotify';
 import SearchBar from "material-ui-search-bar";
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+import Chip from '@material-ui/core/Chip';
+
 
 
 
@@ -41,7 +45,7 @@ export default function Community() {
       handleShowAddedDialogue();
     }
   }
-  
+
   let handleShowAddedDialogue = () =>
     setTimeout(() => setShowAddedDialogue(false)
       , 3000);
@@ -50,14 +54,15 @@ export default function Community() {
     <div className="content-container">
       <div className="community-container">
         <Breadcrumbs aria-label="breadcrumb" className="breadcrumb">
-          <Link>Community</Link>
+          <Link>Trang chủ</Link>
+          <Typography>Cộng đồng</Typography>
         </Breadcrumbs>
 
         <div className="search-group-wrapper">
           <div className="search-group">
             <SearchBar className="search-bar" />
             <div className="tag-group">
-              {tags.map((tag, id) => <Tag content={tag} key={id} selected={selectedTag} toggleSelectedTag={toggleSelectedTag}></Tag>)}
+              {tags.map((tag, id) => <Chip label={tag} key={id} onClick={() => toggleSelectedTag(tag)}></Chip>)}
             </div>
           </div>
         </div>

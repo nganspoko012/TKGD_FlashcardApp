@@ -123,4 +123,52 @@
         "creatorId": 3,
         "rating": 5
     }
+    ,
+    {
+        "id": 12,
+        "name": "550+ Phrasal Verbs",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 550,
+        "tags": ["English"],
+        "userId": 5,
+        "creatorId": 3,
+        "rating": 5
+    }
+    ,
+    {
+        "id": 13,
+        "name": "4000 Common words English",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 4000,
+        "tags": ["English", "Vocabulary"],
+        "userId": 5,
+        "creatorId": 6,
+        "rating": 4.5
+    }
+    ,
+    {
+        "id": 14,
+        "name": "Advanced English Vocabulary part I",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 1400,
+        "tags": ["English", "Vocabulary"],
+        "userId": 5,
+        "creatorId": 7,
+        "rating": 4.5
+    }
+    ,
+    {
+        "id": 15,
+        "name": "Business English Phrasal Verbs",
+        "isPublic": true,
+        "dueCards": 0,
+        "totalCards": 500,
+        "tags": ["English"],
+        "userId": 7,
+        "creatorId": 7,
+        "rating": 4.5
+    }
 ]

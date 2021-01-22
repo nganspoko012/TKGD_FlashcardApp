@@ -43,10 +43,6 @@ export default function ComunityCourseItem({ course = {}, handleAdded = f => f }
                 </div>
 
             </div>
-            <div className="tag-group">
-                {course.tags.map((tag, id) =>
-                    <Tag content={tag} key={id}></Tag>)}
-            </div>
         </div>
     )
 }
