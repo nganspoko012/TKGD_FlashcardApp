@@ -1,10 +1,9 @@
 import './Community.css';
 import Avatar from '../UserInfo/Avatar.js'
-import { Link, useRouteMatch } from 'react-router-dom'
+import { useRouteMatch } from 'react-router-dom'
 import Tag from './Tag'
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import Rating from '@material-ui/lab/Rating';
-import Box from '@material-ui/core/Box';
 
 
 export default function ComunityCourseItem({ course = {}, handleAdded = f => f }) {
