@@ -2,6 +2,7 @@ import CourseCard from './CourseCard';
 import CommunityCourseCard from './CommunityCourseCard';
 import './Home.css';
 import Banner from './Banner.js';
+import Link from '@material-ui/core/Link';
 import { useCourses } from '../../Provider/CoursesProvider.js'
 import {getUser} from '../../Provider/LoggedUserProvider';
 import {getCoursesUser} from '../../Utils/coursesUser';
@@ -22,10 +23,10 @@ export default function Home() {
                 <div className="courses-wrapper">
                     <div className="more-info">
                         <div>Học phần của bạn</div>
-                        <a className="more-info-link">
-                            <span>Xem tất cả</span>
+                        <div className="more-info-link">
+                            <Link href="/courses">Xem tất cả</Link>
                             <i className="material-icons md-24">navigate_next</i>
-                        </a>
+                        </div>
                     </div>
                     <div className="course-container">
                         {personalCourses.slice(0, maxNCoursesUsers).map((course, i) =>
@@ -35,10 +36,10 @@ export default function Home() {
                 <div className="courses-wrapper">
                     <div className="more-info">
                         <div>Học phần mới từ cộng đồng</div>
-                        <a className="more-info-link">
-                            <span>Xem tất cả</span>
+                        <div className="more-info-link">
+                            <Link href="/community">Xem tất cả</Link>
                             <i className="material-icons md-24">navigate_next</i>
-                        </a>
+                        </div>
                     </div>
                     <div className="course-container">
                         {communityCourses.slice(0, maxNCoursesUsers).map((course, i) =>
