@@ -41,13 +41,7 @@ export default function Community() {
       handleShowAddedDialogue();
     }
   }
-
-  function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
-  }
-
-
+  
   let handleShowAddedDialogue = () =>
     setTimeout(() => setShowAddedDialogue(false)
       , 3000);
