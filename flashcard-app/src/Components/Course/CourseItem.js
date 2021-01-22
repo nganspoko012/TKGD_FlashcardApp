@@ -1,9 +1,8 @@
 import './Courses.css';
 import Avatar from '../UserInfo/Avatar.js'
-import { Link, useRouteMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function CourseItem({ course = {} }) {
-    let match = useRouteMatch();
     return (
         <Link to={`/learn/${course.id}`} className="course-item">
             <div className="course-item-detail">

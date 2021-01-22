@@ -1,13 +1,11 @@
 import './Community.css';
 import Avatar from '../UserInfo/Avatar.js'
-import { useRouteMatch } from 'react-router-dom'
 import Tag from './Tag'
 import {  useState } from 'react';
 import Rating from '@material-ui/lab/Rating';
 
 
 export default function ComunityCourseItem({ course = {}, handleAdded = f => f }) {
-    let match = useRouteMatch();
     const [added, setAdded] = useState(false);
     let onAdded = (e) => {
         e.stopPropagation();
