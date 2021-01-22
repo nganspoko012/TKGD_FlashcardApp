@@ -4,13 +4,11 @@ import { useCourses } from '../../Provider/CoursesProvider';
 import { getUser } from '../../Provider/LoggedUserProvider';
 import { getCoursesUser } from '../../Utils/coursesUser.js'
 import Tag from './Tag'
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import CourseAddedNotify from './CourseAddedNotify';
 import SearchBar from "material-ui-search-bar";
-import Pagination from "material-ui-flat-pagination";
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
 
 
 
@@ -22,7 +20,7 @@ export default function Community() {
   const [showAddedDialogue, setShowAddedDialogue] = useState(false);
 
   //prepare data for dis play course user
-  let publicCourses = courses.filter(course => course.userId !== getUser(5).id && course.isPublic == true);
+  let publicCourses = courses.filter(course => course.userId !== getUser(5).id && course.isPublic === true);
   let publicCoursesUsers = getCoursesUser(publicCourses);
   let filteredPublicCoursesUsers = publicCoursesUsers;
   if (selectedTag !== "" && selectedTag !== "...more")
@@ -37,7 +35,7 @@ export default function Community() {
   };
 
   let onAddCourse = (name) => {
-    if (name != "") {
+    if (name !== "") {
       setAddedCourseName(name);
       setShowAddedDialogue(true);
       handleShowAddedDialogue();
@@ -69,7 +67,7 @@ export default function Community() {
             </div>
           </div>
         </div>
-        
+
         <CourseAddedNotify show={showAddedDialogue} addedCourseName={addedCourseName} />
         <CommunityCourseItemRow courses={filteredPublicCoursesUsers} onCourseItemAdded={onAddCourse} />
       </div>

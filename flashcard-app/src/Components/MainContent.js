@@ -7,7 +7,6 @@ import MyCoursesPage from './Course/MyCoursesPage';
 import { DueFlashcardProvider } from '../Provider/DueFlashcardsProvider';
 
 export default function MainContent() {
-    let match = useRouteMatch();
     return (
         <Switch>
             <Route path="/community">
