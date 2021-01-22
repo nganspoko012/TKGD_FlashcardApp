@@ -11,8 +11,10 @@ const setDueDay = () => {
 export function DueFlashcardProvider({children}){
     const [dueFlashcards, setDueFlashcards] = useState(flashcards);
     //flashcards.filter(flashcard => new Date(flashcard.dueDate) >= new Date())
-    const learnFlashcard = (id) => setDueFlashcards(dueFlashcards.map(flashcard => 
-        flashcard.id === id ? {...flashcard, lastedLearnDate: new Date(), dueDate: setDueDay} : flashcard))
+    const learnFlashcard = (id) => {
+                setDueFlashcards(dueFlashcards.map(flashcard => 
+                    flashcard.id === id ? {...flashcard, lastedLearnDate:  Date.now(), dueDate: setDueDay()} : flashcard)
+            )};
         return (
             <DueFlashcardsContext.Provider value={{dueFlashcards, learnFlashcard}}>
                 {children}

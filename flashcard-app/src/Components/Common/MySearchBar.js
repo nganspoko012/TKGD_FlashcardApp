@@ -1,4 +1,4 @@
-import './MySearchBar.css';
+import './Common.css';
 
 export default function MySearchBar() {
     return (

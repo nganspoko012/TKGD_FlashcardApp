@@ -9,8 +9,13 @@ export function CoursesProvider({ children }) {
         setCourses(courses.map(course => 
             course.id === id ? {...course, dueCards: 0} : course));
     };
+    const getCourse = id => {
+        return courses.find(course =>                 
+            course.id === id
+            );
+    };
     return (
-        <CoursesContext.Provider value={{ courses, learnCourse }}>
+        <CoursesContext.Provider value={{ courses, learnCourse, getCourse }}>
             {children}
         </CoursesContext.Provider>
     );

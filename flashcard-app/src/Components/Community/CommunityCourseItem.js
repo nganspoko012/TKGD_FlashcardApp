@@ -1,11 +1,11 @@
 import './Community.css';
 import Avatar from '../UserInfo/Avatar.js'
-import { Link, useRouteMatch } from 'react-router-dom'
 import Tag from './Tag'
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
+import Rating from '@material-ui/lab/Rating';
+
 
 export default function ComunityCourseItem({ course = {}, handleAdded = f => f }) {
-    let match = useRouteMatch();
     const [added, setAdded] = useState(false);
     let onAdded = (e) => {
         e.stopPropagation();
@@ -27,7 +27,7 @@ export default function ComunityCourseItem({ course = {}, handleAdded = f => f }
                 <div className="right-wrapper">
                     <div className="rating">
                         <span>{course.rating}</span>
-                        <i className="material-icons md-24 star">star</i>
+                        <Rating name="read-only" value={course.rating} readOnly size="medium"/>
                     </div>
                     <div className="my-courses-user">
                         <Avatar letter={course.user.displayName.charAt(0)} color={course.user.avatarColor} size="32px" />

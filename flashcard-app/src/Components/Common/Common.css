@@ -1,5 +1,6 @@
 @import '../../style.css';
 
+/*
 .search-bar {
     margin-top: 20px;
     width: 1000px;
@@ -23,4 +24,18 @@
     all: unset;
     width: 90%;
     height: 100%;
+}*/
+
+.breadcrumb{
+    align-self: start;
+    font-size: 1rem;
+  }
+  
+.breadcrumb :hover {
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 1000px;
+    max-width: 90%;
 }
