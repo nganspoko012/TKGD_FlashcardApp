@@ -15,15 +15,23 @@ import { useState } from 'react';
 export default function MyCoursesPage() {
     const { courses } = useCourses();
     const loggedUser = getUser(5);
-    let coursesUsers = courses.filter(course => course.userId === loggedUser.id)
-        .map((course) => {
-            let creator = getUser(course.creatorId)
-            return { ...course, user: creator };
-        });
+
+    let getCoursesUsers = () => courses.filter(course => course.userId === loggedUser.id)
+    .map((course) => {
+        let creator = getUser(course.creatorId)
+        return { ...course, user: creator };
+    });
+
+    const [coursesUsers, setCoursesUsers] = useState(getCoursesUsers());
 
     const [currentOffset, setOffset] = useState(0);
+
     let handleClick = (offset) => {
         setOffset(offset);
+    };
+
+    let handleSearchBar = (search) => {
+        setCoursesUsers(() => getCoursesUsers().filter(course => course.name.toLowerCase().includes(search)));
     };
 
     return (
@@ -39,13 +47,14 @@ export default function MyCoursesPage() {
                 <SearchBar
                     placeholder="Tìm kiếm học phần"
                     className="search-bar"
+                    onChange={handleSearchBar}
                 />
 
                 <CourseItemRow courses={coursesUsers} />
 
                 <Pagination
                     limit={10}
-                    total={100}
+                    total={1}
                     offset={currentOffset}
                     onClick={(e, offset) => handleClick(offset)}
                 />
